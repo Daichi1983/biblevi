@@ -1,0 +1,73 @@
+---
+const { asin, title, url, imageUrl } = Astro.props;
+
+// パターン1: imageUrlが渡されたらそれを使う
+// パターン2: なければ、最も404になりにくい「Pドメイン」の「LZZZ」形式を試す
+const finalImageUrl = imageUrl || `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`;
+---
+
+<div class="amazon-card">
+  <div class="amazon-card-image">
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      
+      <img 
+        src={finalImageUrl} 
+        alt={title} 
+        loading="lazy"
+        referrerpolicy="no-referrer" 
+      />
+
+    </a>
+  </div>
+  <div class="amazon-card-info">
+    <p class="amazon-card-title">{title}</p>
+    <a href={url} target="_blank" rel="noopener noreferrer" class="amazon-button">
+      Amazonでチェックする
+    </a>
+  </div>
+</div>
+
+<style>
+  .amazon-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    margin: 2rem 0;
+    align-items: center;
+  }
+  .amazon-card-image img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    margin: 0 !important; /* Markdownのデフォルトスタイルをリセット */
+  }
+  .amazon-card-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .amazon-button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #000 !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  .amazon-button:hover {
+    background-color: #e68a00;
+  }
+  /* スマホ対応 */
+  @media (max-width: 600px) {
+    .amazon-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>  

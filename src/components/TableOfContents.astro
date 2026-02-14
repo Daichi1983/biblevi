@@ -14,13 +14,22 @@ export interface Heading {
 function buildToc(headings: Heading[]) {
   const toc: Heading[] = [];
   const parentHeadings = new Map();
+
   headings.forEach((h) => {
     const heading = { ...h, subheadings: [] };
     parentHeadings.set(heading.depth, heading);
+
     if (heading.depth === 2) {
       toc.push(heading);
     } else {
-      parentHeadings.get(heading.depth - 1).subheadings.push(heading);
+      // 親（一つ上の深さの見出し）を取得
+      const parent = parentHeadings.get(heading.depth - 1);
+      if (parent) {
+        parent.subheadings.push(heading);
+      } else {
+        // もし親がいなければ（飛び級していたら）、とりあえず最上位に追加してエラーを防ぐ
+        toc.push(heading);
+      }
     }
   });
   return toc;

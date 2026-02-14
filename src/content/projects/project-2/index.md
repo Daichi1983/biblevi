@@ -6,6 +6,8 @@ demoURL: "https://astro-nano-demo.vercel.app"
 repoURL: "https://github.com/markhorn-dev/astro-nano"
 ---
 
+import AmazonCard from "../../components/AmazonCard.astro";
+
 ![Astro Nano](/astro-nano.png)
 
 Astro Nano is a static, minimalist, lightweight, lightning fast portfolio and blog theme.

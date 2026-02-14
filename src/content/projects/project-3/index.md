@@ -6,6 +6,8 @@ demoURL: "https://astro-micro.vercel.app"
 repoURL: "https://github.com/trevortylerlee/astro-micro"
 ---
 
+import AmazonCard from "../../components/AmazonCard.astro";
+
 ![Astro Micro](/astro-micro.jpg)
 
 Astro Micro is an accessible theme for Astro. It's a fork of Mark Horn's popular theme Astro Nano. Like Nano, Micro comes with zero frameworks installed.

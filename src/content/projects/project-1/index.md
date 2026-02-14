@@ -6,6 +6,8 @@ demoURL: "https://astro-sphere-demo.vercel.app"
 repoURL: "https://github.com/markhorn-dev/astro-sphere"
 ---
 
+import AmazonCard from "../../components/AmazonCard.astro";
+
 ![Astro Sphere](/astro-sphere.jpg)
 
 Astro Sphere is a static, minimalist, lightweight, lightning fast portfolio and blog theme based on Mark Horn's personal website.
