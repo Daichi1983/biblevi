@@ -1,5 +1,5 @@
 {
-  "name": "astro-micro", // 好きな名前でOK
+  "name": "biblevi", // 好きな名前でOK
   "compatibility_date": "2026-02-14",
   "assets": {
     "directory": "./dist" // Astroがビルド結果を出力したフォルダを指定
