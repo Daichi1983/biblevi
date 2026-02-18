@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="プロフィール | biblevi.net">
+  <main class="container">
+    <article class="prose">
+      <h1>About / Profile</h1>
+      
+      <p>ご訪問ありがとうございます。このブログ <strong>biblevi.net</strong> では、主に<strong>文化人類学</strong>や<strong>言語学</strong>を中心とした文系学問の専門書、および一般書の読書記録を公開しています。</p>
+
+      <hr />
+
+      <h2>運営者について</h2>
+      <p>文化人類学や言語学といった、人間の思考や社会の「深層」を探る学問に強い関心を持っています。</p>
+      <p>私たちが当たり前だと思っている日常や、思考を規定している言葉の背後にある構造を、専門書を通して解き明かしていく過程に魅力を感じています。難解な学術書であっても、そこから得られる知見は現代社会を相対化し、新たな視点を与えてくれる強力な武器になると信じています。</p>
+
+      <h3>主な関心領域</h3>
+      <ul>
+        <li><strong>文化人類学</strong>：構造主義、認識人類学、交換理論、フィールドワーク論など</li>
+        <li><strong>言語学</strong>：言語類型論、認知言語学、社会言語学、意味論など</li>
+        <li><strong>その他</strong>：社会学、西洋哲学、歴史学などの人文書全般</li>
+      </ul>
+
+      <hr />
+
+      <h2>このブログの目的</h2>
+      <ol>
+        <li><strong>知の備忘録</strong>：読了した専門書のエッセンスを整理し、自分なりの考察を記録すること。</li>
+        <li><strong>読書ガイド</strong>：同じ分野を志す方や、これから人文書を読み始めたい方に向けて、書評を通じた一助となること。</li>
+        <li><strong>視点の共有</strong>：専門的な知見を日常の視点に繋げ、思考を深めるプロセスを共有すること。</li>
+      </ol>
+
+
+    </article>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  .prose {
+    line-height: 1.8;
+    color: #333;
+  }
+  .prose h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  .prose h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #2c3e50;
+  }
+  .prose h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+  .prose ul, .prose ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .prose li {
+    margin-bottom: 0.5rem;
+  }
+  .contact-button {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .contact-button:hover {
+    background: #34495e;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 2rem 0;
+  }
+</style>
