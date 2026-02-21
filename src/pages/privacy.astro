@@ -25,6 +25,11 @@ import Layout from '../layouts/Layout.astro';
 
       <h2>5. プライバシーポリシーの変更について</h2>
       <p>当サイトは、個人情報に関して適用される日本の法令を遵守するとともに、本ポリシーの内容を適宜見直しその改善に努めます。修正された最新のプライバシーポリシーは常に本ページにて開示されます。</p>
+
+      <h2>6. お問い合わせ</h2>
+      <p>本ポリシーおよび当サイトに関するお問い合わせは、以下のメールアドレスまでお願いいたします。</p>
+      <p>メール：[utibori1@gmail.com]</p>
+
     </article>
   </main>
 </Layout>
@@ -37,7 +42,8 @@ import Layout from '../layouts/Layout.astro';
   }
   .prose {
     line-height: 1.8;
-    color: #333;
+    /* color: #333; 固定色を削除 */
+    --at-apply: text-black dark:text-white; /* Tailwindを使っている場合 */
   }
   .prose h1 {
     font-size: 2.2rem;
