@@ -2,35 +2,39 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="プロフィール | biblevi.net">
+<Layout title="紹介 / プロフィール | biblevi.net">
   <main class="container">
     <article class="prose">
       <h1>About / Profile</h1>
       
-      <p>ご訪問ありがとうございます。このブログ <strong>biblevi.net</strong> では、主に<strong>文化人類学</strong>や<strong>言語学</strong>を中心とした文系学問の専門書、および一般書の読書記録を公開しています。</p>
+      <p>ご訪問ありがとうございます。<strong>biblevi.net（ビブレビ！）</strong>は、言語学研究者である運営者が、文化人類学や言語学を中心とした人文学・社会科学の専門書を深く読み解き、その知見をアーカイブする<strong>「研究者による書評メディア」</strong>です。</p>
 
       <hr />
 
       <h2>運営者について</h2>
-      <p>文化人類学や言語学といった、人間の思考や社会の「深層」を探る学問に強い関心を持っています。</p>
-      <p>私たちが当たり前だと思っている日常や、思考を規定している言葉の背後にある構造を、専門書を通して解き明かしていく過程に魅力を感じています。難解な学術書であっても、そこから得られる知見は現代社会を相対化し、新たな視点を与えてくれる強力な武器になると信じています。</p>
+      <p><strong>ウチボリ（Uchibori） / 言語学研究者</strong></p>
+      <p>人間の思考や社会の「深層」を探る学問に強い関心を持ち、パラオ語をはじめとする言語構造や、文化人類学的なフィールドワークを通じた知の探求を行っています。</p>
+      <p>私たちが当たり前だと思っている日常や、思考を規定している言葉の背後にある「構造」を、専門書を通して解き明かしていくプロセスに魅力を感じています。難解な学術書であっても、そこから得られる知見は現代社会を相対化し、新たな視点を与えてくれる強力な武器になると信じています。</p>
 
-      <h3>主な関心領域</h3>
+      <h3>主な専門・関心領域</h3>
       <ul>
-        <li><strong>文化人類学</strong>：構造主義、認識人類学、交換理論、フィールドワーク論など</li>
-        <li><strong>言語学</strong>：言語類型論、認知言語学、社会言語学、意味論など</li>
-        <li><strong>その他</strong>：社会学、西洋哲学、歴史学などの人文書全般</li>
+        <li><strong>文化人類学</strong>：構造主義、認識人類学、交換理論、フィールドワーク論</li>
+        <li><strong>言語学</strong>：言語類型論（タイポロジー）、認知言語学、社会言語学、意味論</li>
+        <li><strong>人文学全般</strong>：西洋哲学、社会学、歴史学などの学術書・専門書</li>
       </ul>
 
       <hr />
 
-      <h2>このブログの目的</h2>
+      <h2>当ブログの目的と運営ポリシー</h2>
       <ol>
-        <li><strong>知の備忘録</strong>：読了した専門書のエッセンスを整理し、自分なりの考察を記録すること。</li>
-        <li><strong>読書ガイド</strong>：同じ分野を志す方や、これから人文書を読み始めたい方に向けて、書評を通じた一助となること。</li>
-        <li><strong>視点の共有</strong>：専門的な知見を日常の視点に繋げ、思考を深めるプロセスを共有すること。</li>
+        <li><strong>知の構造化とアーカイブ</strong>：読了した専門書のエッセンスを単に要約するのではなく、自身の研究知見に基づいた深い考察を加え、独自の知見として記録すること。</li>
+        <li><strong>学術書への橋渡し</strong>：同じ分野を志す方や、これから人文学を深めたい方に向けて、論理的かつ明快な解説を通じた「読書ガイド」となること。</li>
+        <li><strong>E-E-A-Tの遵守</strong>：本サイトのコンテンツは、すべて運営者本人が精読し、学術的な背景知識に基づいて執筆しています。AI生成ではない、一次情報と専門的知見を重視した発信を徹底しています。</li>
       </ol>
 
+      <div style="margin-top: 3rem; text-align: center;">
+        <a href="/" class="contact-button">書評一覧へ戻る</a>
+      </div>
 
     </article>
   </main>
@@ -45,43 +49,53 @@ import Layout from '../layouts/Layout.astro';
   .prose {
     line-height: 1.8;
     color: #333;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   }
   .prose h1 {
     font-size: 2.5rem;
     border-bottom: 3px solid #eee;
     padding-bottom: 0.5rem;
+    color: #2c3e50;
   }
   .prose h2 {
     font-size: 1.8rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     color: #2c3e50;
+    border-left: 5px solid #2c3e50;
+    padding-left: 1rem;
   }
   .prose h3 {
     font-size: 1.4rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    color: #34495e;
+  }
+  .prose p {
+    margin: 1.2rem 0;
   }
   .prose ul, .prose ol {
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
   }
   .prose li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
   }
   .contact-button {
     display: inline-block;
     background: #2c3e50;
     color: white;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 2rem;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background 0.3s ease;
   }
   .contact-button:hover {
     background: #34495e;
+    text-decoration: none;
   }
   hr {
     border: 0;
     border-top: 1px solid #eee;
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
 </style>
